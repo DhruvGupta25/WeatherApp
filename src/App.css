@@ -1,0 +1,205 @@
+body{
+    background-color:darkblue;
+}
+#App{
+    color: yellow;
+    text-align: center;
+}
+.button{
+    height:30px;
+    width:60px;
+    margin-left:0.25em;
+    font-size: 15px;
+    border-radius: 10%;
+    background-color:rgba(160,30,153,.8980392156862745);
+    color:white;
+}
+.button:hover{
+    font-weight: 700;
+    border-color: #e6f83f;
+    color: #f5ea4e;
+    box-shadow: 0 0.5em 0.5em -0.4em #e8fa46;
+    transform: translateY(-1.5px);
+    cursor: pointer;
+}
+.imgtext:hover{
+    font-weight: 700;
+    box-shadow: 0 0.5em 0.5em -0.4em #e8fa46;
+    transform: translateY(-1.5px);
+    cursor: pointer;
+}
+#img{
+    width:70%;
+    
+}
+.imagetext{
+    position:absolute;
+    top:50%;
+    left:10%;
+    width:90%;
+    text-align: left;
+    padding:0;
+    color:yellow;
+    text-shadow: 0 0 42px rgb(5, 18, 196), 
+                 0 0 82px rgb(5, 18, 196), 
+                 0 0 92px rgb(5, 18, 196), 
+                 0 0 102px rgb(5, 18, 196), 
+                 0 0 151px rgb(5, 18, 196);
+}
+.textimage{
+    position:absolute;
+    top:45%;
+    left:10%;
+    width:90%;
+    text-align: left;
+    padding:0;
+    color:yellow;
+    text-shadow: 0 0 42px rgb(5, 18, 196), 
+                 0 0 82px rgb(5, 18, 196), 
+                 0 0 92px rgb(5, 18, 196), 
+                 0 0 102px rgb(5, 18, 196), 
+                 0 0 151px rgb(5, 18, 196);
+}
+.imgtext{
+    font-weight: bold;
+    margin-left: 0.7em;
+    border-radius: 10%;
+    height:28px;
+    background-color: white;
+    color: rgba(160,30,153,.8980392156862745);
+}
+.image{
+    position:relative;
+    align-self: center; 
+    height:22em;
+    width:100%;
+}
+#span1{
+    font-size:1.5em;
+    font-weight:bold;
+}
+#list,#listt{
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+#list1{
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    font-size: 1.5em;
+    font-weight:bold;
+}
+@media(max-width: 750px)
+{
+    #list,#listt{
+        flex-direction:column;
+    }
+    #span3,#span4{
+        margin-left:6.4em;
+    }
+    #list1{
+        flex-direction:column;
+    }
+    #span6{
+        margin-left:6.4em;
+    }
+}
+@media(max-width: 550px)
+{
+ .imagetext,.textimage{
+     left:5%;
+ }
+}
+@media(max-width: 380px)
+{
+  .imagetext,.textimage{
+    left:5%;  
+    font-size:0.9em;
+  }  
+}
+@media(min-height: 710px)
+{
+    .imagetext{
+        top:40%;
+    }
+}
+@media(min-height: 680px)
+{
+    .textimage{
+        top:35%;
+    }
+}
+@media(min-height: 960px)
+{
+    .imagetext{
+        top:30%;
+    }
+}
+@media(min-height: 900px)
+{
+    .textimage{
+        top:30%;
+    }
+}
+@media(max-height: 570px) 
+{
+    .imagetext{
+        top:55%;
+    }
+}
+@media(max-height: 550px) 
+{
+    .textimage{
+        top:50%;
+    }
+}
+@media(max-height: 510px)
+{
+    .imagetext,.textimage{
+        top:60%
+    }
+    #list1{
+        display:none;
+    }
+}
+@media(max-height: 475px)
+{
+    .imagetext{
+        top:75%;
+        font-size: 1.2em;
+    }
+    #list{
+        display:none;
+    }
+}
+@media(max-height: 450px)
+{
+    .textimage{
+        font-size: 1.2em;
+        top:70%;
+    }
+    #listt{
+        display:none;
+    }
+}
+@media(max-height: 380px)
+{
+    .imagetext{
+        
+        display: none;
+    }
+}
+@media(max-height: 365px)
+{
+    .textimage{
+        
+        display: none;
+    }
+}
